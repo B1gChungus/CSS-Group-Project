@@ -52,40 +52,45 @@
 
 
 
-        .infodropdown{
+        .infodropdown {
             display: inline-block;
             position: relative;
         }
 
-        .links{
+        .links {
             display: none;
             position: absolute;
             background-color: #f1f1f1;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
-        .linkdropdown{
+
+        .linkdropdown {
             background-color: #04AA6D;
             color: white;
             padding: 16px;
             font-size: 16px;
             border: none;
         }
-        .links a{
-             color: black;
+
+        .links a {
+            color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
-        .links a:hover{
-            background-color: rgb(200,200,200);
+
+        .links a:hover {
+            background-color: rgb(200, 200, 200);
         }
-        .infodropdown:hover .links{
+
+        .infodropdown:hover .links {
             display: block;
         }
-        .infodropdown:hover .linkdropdown{
-            background-color: rgb(200,200,200);
+
+        .infodropdown:hover .linkdropdown {
+            background-color: rgb(200, 200, 200);
         }
 
         .box {
@@ -119,6 +124,27 @@
             border-radius: 20px;
             width: 40%;
         }
+
+        .info {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .info p {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cen {
+            column-count: 3;
+            display: flex;
+            justify-content: space-evenly;
+        }
     </style>
 </head>
 
@@ -150,6 +176,17 @@
             death, we will supply you with money in order to afford funeral services and more.</p>
 
     </div>
+    <footer>
+        <p>
+            Contact Information
+        </p>
+
+        <div class="cen">
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+        </div>
+    </footer>
 </body>
 
 </html>
