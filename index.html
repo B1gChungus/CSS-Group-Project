@@ -42,15 +42,17 @@
             color: chartreuse;
         }
 
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .topbar li {
             list-style-type: none;
             justify-content: space-evenly;
             display: inline;
             font-size: 35px;
         }
-
-
-
 
         .infodropdown {
             display: inline-block;
@@ -61,7 +63,7 @@
             display: none;
             position: absolute;
             background-color: #f1f1f1;
-            min-width: 160px;
+            min-width: 200px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
@@ -144,14 +146,37 @@
             column-count: 3;
             display: flex;
             justify-content: space-evenly;
+
         }
+
+        .bottombar {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-area:
+                "top top top"
+                "bot bot bot"
+
+
+            ;
+        }
+
+        .top {
+            display: flex;
+            grid-area: top;
+            align-content: center;
+        }
+
+        .second {
+            grid-area: bot;
+        }
+
+        .bot {}
     </style>
 </head>
 
 <body>
     <ul class="topbar">
-        <li><img src="images/logo.png" width="50"></img></li>
-        <li>L&L Insurance</li>
         <li>
             <div class="infodropdown">
                 <button class="linkdropdown">Links</button>
@@ -162,10 +187,14 @@
                 </div>
             </div>
         </li>
+        <li>L&L Insurance</li>
+        <li>
+            <p></p>
+        </li>
     </ul>
     <hr>
 
-    <h1>L&L Insurance</h1>
+    <div style="text-align: center;"><img src="images/logo.png" width="300" class="center"></img></div>
     <input type="text" placeholder="Search..">
     <br>
 
@@ -181,11 +210,7 @@
             Contact Information
         </p>
 
-        <div class="cen">
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-        </div>
+
     </footer>
 </body>
 
