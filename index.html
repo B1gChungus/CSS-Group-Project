@@ -43,15 +43,21 @@
         }
 
         .topbar{
-            display: flex;
-            justify-content: space-between;
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            background-color: #262626;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
         }
 
-        .topbar li {
-            list-style-type: none;
-            justify-content: space-evenly;
-            display: inline;
+        .topbar p {
+            text-align: center;
+            font-family: Inconsolata;
+            font-weight: 400;
             font-size: 35px;
+            user-select: none;
+            color: white;
         }
 
         .infodropdown{
@@ -91,19 +97,19 @@
         }
 
         .box {
-
-            border: 10px #808080 solid;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            border: 10px #363636 solid;
             padding: 1%;
             margin: auto;
             width: 50%;
-            background-color: #808080;
-            color: #474747;
+            background-color: #363636;
+            color: white;
         }
 
         .box hr {
-            height: 4px;
-            background-color: #474747;
-            border-color: #474747;
+            height: 2px;
+            background-color: white;
+            border-color: white;
             border: none;
         }
 
@@ -124,24 +130,10 @@
     </style>
 </head>
 
-<body>
-    <ul class="topbar">
-        <li>
-            <div class="infodropdown">
-                <button class="linkdropdown">Links</button>
-                <div class="links">
-                    <a href="index.html">Home</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="services.html">Services</a>
-                </div>
-            </div>
-        </li>
-        <li>L&L Insurance</li>
-        <li>
-            <p></p>
-        </li>
-    </ul>
-    <hr>
+<body style = "padding : 0; margin:0;">
+    <div class="topbar">
+        <p>L&L Insurance</p>
+    </div>
 
     <div style = "text-align: center;"><img src="images/logo.png" width="300" class = "center"></img></div>
     <input type="text" placeholder="Search..">
