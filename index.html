@@ -45,6 +45,46 @@
             display: inline;
             font-size: 35px;
         }
+
+
+
+
+        .infodropdown{
+            display: inline-block;
+            position: relative;
+        }
+
+        .links{
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .linkdropdown{
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        .links a{
+             color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .links a:hover{
+            background-color: rgb(200,200,200);
+        }
+        .infodropdown:hover .links{
+            display: block;
+        }
+        .infodropdown:hover .linkdropdown{
+            background-color: rgb(200,200,200);
+        }
+
     </style>
 </head>
 
@@ -52,17 +92,20 @@
     <ul class = "topbar">
         <li><img src="images/logo.png" width="50"></img></li>
         <li>L&L Insurance</li>
+        <li>
+            <div class="infodropdown">
+                <button class="linkdropdown">Links</button>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </div>
+        </li>
     </ul>
     <hr>
-    <div class="navbar">
-        <a href="index.html"> Home </a>
-        <a href="gallery.html"> Gallery </a>
-        <a href="services.html"> Services</a>
-    </div>
-    <h1>L&L Insurance</h1>
 
     <p>L&L insurance supplies you with affordable, high-quality insurance for your loved ones. In the case of their death, we will supply you with money in order to afford funeral services and more.</p>
-    
 </body>
 
 </html>
