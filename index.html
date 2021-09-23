@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
-        div {
-            text-align: center;
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
+        img {
+            align-content: center;
         }
 
         h1 {
@@ -18,7 +21,6 @@
 
         p {
             font-size: 25px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
         }
 
@@ -33,30 +35,72 @@
             width: 50%;
             margin: auto;
             padding: 10px;
-
-
         }
 
         div a {
             text-decoration: none;
             color: chartreuse;
         }
+
+        .topbar li {
+            list-style-type: none;
+            justify-content: space-evenly;
+            display: inline;
+            font-size: 35px;
+        }
+
+        .box {
+
+            border: 10px #808080 solid;
+            padding: 1%;
+            margin: auto;
+            width: 50%;
+            background-color: #808080;
+            color: #474747;
+        }
+
+        .box hr {
+            height: 4px;
+            background-color: #474747;
+            border-color: #474747;
+            border: none;
+        }
+
+        body {
+            background-color: #E6E6E6;
+        }
+
+        input[type=text] {
+
+            padding: 6px;
+            border: none;
+            margin: 0 auto;
+            display: block;
+            font-size: 17px;
+            border-radius: 20px;
+            width: 40%;
+        }
     </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="index.html"> Home </a>
-        <a href="gallery.html"> Gallery </a>
-        <a href="services.html"> Services</a>
-    </div>
+    <ul class="topbar">
+        <li><img src="images/logo.png" width="50"></img></li>
+        <li>L&L Insurance</li>
+    </ul>
+    <hr>
+
     <h1>L&L Insurance</h1>
-    <div>
-        <img src="images/logo.png" width="400px"></img>
+    <input type="text" placeholder="Search..">
+    <br>
+
+    <div class="box">
+        <p>Our Mission</p>
+        <hr>
+        <p>L&L insurance supplies you with affordable, high-quality insurance for your loved ones. In the case of their
+            death, we will supply you with money in order to afford funeral services and more.</p>
+
     </div>
-    <p>L&L insurance supplies you with affordable, high-quality insurance for your loved ones. In the case of their
-        death, we will supply you with money in order to afford funeral services and more.</p>
-    <footer></footer>
 </body>
 
 </html>
