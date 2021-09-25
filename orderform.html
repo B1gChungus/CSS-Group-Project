@@ -58,15 +58,6 @@
 
 
 
-        .orderbox {
-            border: 0px solid #262626;
-            margin: auto;
-            width: 45%;
-            padding: 5%;
-            background-color: #262626;
-            top: 50%;
-
-        }
 
 
 
@@ -93,6 +84,93 @@
             text-align: center;
             font-size: larger;
         }
+
+        .orderform1 {
+            border: 0px solid #262626;
+            margin: auto;
+            width: 45%;
+            padding: 4%;
+            background-color: #262626;
+            top: 50%;
+
+        }
+
+        .orderform2 {
+            border: 0px solid #262626;
+            margin: auto;
+            width: 45%;
+            padding: 4%;
+            background-color: #262626;
+            top: 50%;
+        }
+
+        .orderform3 {
+            border: 0px solid #262626;
+            margin: auto;
+            width: 45%;
+            padding: 4%;
+            background-color: #262626;
+            top: 50%;
+        }
+
+        .orderform4 {
+            border: 0px solid #262626;
+            margin: auto;
+            width: 45%;
+            padding: 4%;
+            background-color: #262626;
+            top: 50%;
+
+        }
+
+        .orderform5 {
+            border: 0px solid #262626;
+            margin: auto;
+            width: 45%;
+            padding: 4%;
+            background-color: #262626;
+            top: 50%;
+        }
+
+        .orderform6 {
+            border: 0px solid #262626;
+            margin: auto;
+            width: 45%;
+            padding: 4%;
+            background-color: #262626;
+            top: 50%;
+        }
+
+        .bigform {
+            column-count: 3;
+        }
+
+        .smallform {
+            column-count: 3;
+
+
+        }
+
+        p {
+            color: white;
+        }
+
+        hr {
+            height: 2px;
+            background-color: black;
+            border-color: black;
+            width: 85%;
+        }
+
+        .box {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            border: 10px #363636 solid;
+            padding: 1%;
+            margin: auto;
+            width: 50%;
+            background-color: #363636;
+            color: white;
+        }
     </style>
 </head>
 
@@ -104,40 +182,53 @@
 
 
 
-    <h1>Contact Information</h1>
-    <form>
-        <div class="orderbox">
+    <h1>Order Form</h1>
+    <div class="bigform">
 
-            <div class="center">
-                <label for="name">Your first and last name: </label>
-                <input type="text" id="name" name="name" placeholder="First and Last name here">
-            </div>
-
-            <div class="center">
-                <label for="start">Brithday:</label>
-                <input type="date" id="start">
-            </div>
-
-            <div class="center">
-
-            </div>
-        </div>
-        <div class="center">
-            <label for="Insurance">Type of Insurance: </label>
-            <select name="Insurance" id="Insurancetype">
-                <option value="">--Please choose an insurance--</option>
-                <option value="ins1">Lifeinsurance</option>
-                <option value="ins2">Lifeinsurance</option>
-                <option value="ins3">Lifeinsurance</option>
-                <option value="ins4">Lifeinsurance</option>
-                <option value="ins5">Lifeinsurance</option>
-                <option value="ins6">Lifeinsurance</option>
-            </select>
+        <div class="orderform1">
+            <p>
+                First and last name
+            </p>
         </div>
 
+        <div class="orderform2">
+            <p>
+                Phone Number
+            </p>
+        </div>
 
-    </form>
-    </form>
+        <div class="orderform3">
+            <p>
+                Email Address
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <hr>
+
+    <br>
+    <div class="smallform">
+
+        <div class="orderform4">
+            <input type="text">
+        </div>
+
+        <div class="orderform5">
+            <input type="number">
+        </div>
+
+        <div class="orderform6">
+            <input type="email">
+        </div>
+
+    </div>
+
+
+
+
 
 </body>
 
