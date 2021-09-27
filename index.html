@@ -24,17 +24,27 @@
             text-align: center;
         }
 
-        .navbar {
-
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            width:100%;
+            overflow: hidden;
+            background-color: #333;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .navbar a{
+            display: block;
+            color: white;
             text-align: center;
-            font-family: "Comic Sans MS", "Comic Sans", cursive;
-            background-color: cadetblue;
-            border-radius: 30px;
-            word-spacing: 20px;
-            font-size: larger;
-            width: 50%;
-            margin: auto;
-            padding: 10px;
+            padding: 9px 16px;
+            font-size: 15px;
+        }
+
+        .navbar a:hover{
+            background-color: rgb(63, 63, 63);
         }
 
         div a {
@@ -43,64 +53,22 @@
         }
 
         .topbar {
-            display: inline-block;
+            text-align: center;
+            display: flex;
+            justify-content: flex-end;
             width: 100%;
             margin: 0;
             background-color: #262626;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
         }
 
         .topbar p {
-            text-align: center;
             font-family: Inconsolata;
             font-weight: 400;
+            width:100%;
             font-size: 35px;
             user-select: none;
             color: white;
         }
-
-        .infodropdown {
-            display: inline-block;
-            position: relative;
-        }
-
-        .links {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .linkdropdown {
-            background-color: #04AA6D;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
-
-        .links a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .links a:hover {
-            background-color: rgb(200, 200, 200);
-        }
-
-        .infodropdown:hover .links {
-            display: block;
-        }
-
-        .infodropdown:hover .linkdropdown {
-            background-color: rgb(200, 200, 200);
-        }
-
         .box {
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             border: 10px #363636 solid;
@@ -174,8 +142,11 @@
 
         }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 316d6b4344389ad734bf10b6efc4723e42600989
         .top {
             display: flex;
             grid-area: top;
@@ -194,10 +165,19 @@
     <div class="topbar">
         <p>L&L Insurance</p>
     </div>
+    <div class = "navbar">
+        <a href="gallery.html">Gallery</a>
+        <a href="orderform.html">Order Form</a>
+        <a href="services.html">Services</a>
+    </div>
 
+<<<<<<< HEAD
     <div style="text-align: center;"><img src="images/logo2.png" width="300" class="center"></img></div>
 
 
+=======
+    <div style = "text-align: center;"><img src="images/logo2.png" width="300" class = "center"></img></div>
+>>>>>>> 316d6b4344389ad734bf10b6efc4723e42600989
     <input type="text" placeholder="Search..">
     <br>
 
