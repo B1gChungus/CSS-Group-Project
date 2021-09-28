@@ -24,18 +24,28 @@
             text-align: center;
         }
 
-        .navbar{
+        .navbar {
             display: flex;
             justify-content: space-around;
             margin: 0;
             padding: 0;
-            width:100%;
+            width: 100%;
             overflow: hidden;
             background-color: #333;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             margin-bottom: 20px;
         }
-        .navbar a{
+
+        .topbar a {
+            font-family: Inconsolata;
+            font-weight: 400;
+            width: 100%;
+            font-size: 35px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a {
             display: block;
             color: white;
             text-align: center;
@@ -43,7 +53,11 @@
             font-size: 15px;
         }
 
-        .navbar a:hover{
+        .navbar a:hover {
+            background-color: rgb(63, 63, 63);
+        }
+
+        .topbar a:hover {
             background-color: rgb(63, 63, 63);
         }
 
@@ -61,14 +75,15 @@
             background-color: #262626;
         }
 
-        .topbar p {
+        .topbar a {
             font-family: Inconsolata;
             font-weight: 400;
-            width:100%;
+            width: 100%;
             font-size: 35px;
             user-select: none;
             color: white;
         }
+
         .box {
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             border: 10px #363636 solid;
@@ -142,11 +157,6 @@
 
         }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 316d6b4344389ad734bf10b6efc4723e42600989
         .top {
             display: flex;
             grid-area: top;
@@ -156,28 +166,20 @@
         .second {
             grid-area: bot;
         }
-
-        .bot {}
     </style>
 </head>
 
 <body style="padding : 0; margin:0;">
     <div class="topbar">
-        <p>L&L Insurance</p>
+        <a href="index.html">L&L Insurance</a>
     </div>
-    <div class = "navbar">
+    <div class="navbar">
         <a href="gallery.html">Gallery</a>
         <a href="orderform.html">Order Form</a>
         <a href="services.html">Services</a>
     </div>
 
-<<<<<<< HEAD
     <div style="text-align: center;"><img src="images/logo2.png" width="300" class="center"></img></div>
-
-
-=======
-    <div style = "text-align: center;"><img src="images/logo2.png" width="300" class = "center"></img></div>
->>>>>>> 316d6b4344389ad734bf10b6efc4723e42600989
     <input type="text" placeholder="Search..">
     <br>
 
