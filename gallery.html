@@ -7,38 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
-        .wrapper {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto;
-            gap: .5em;
-            
-        }
-        .wrapper img{
-            margin: auto;
-            margin-left: auto;
-            width: 100%;
-            object-fit: cover;
-            margin-right: auto;
-            
-        }
-
-        .topbar {
-            text-align: center;
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            margin: 0;
-            background-color: #262626;
-        }
-
-        .topbar p {
-            font-family: Inconsolata;
-            font-weight: 400;
-            width:100%;
-            font-size: 35px;
-            user-select: none;
-            color: white;
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
         .navbar{
@@ -68,27 +38,126 @@
             text-decoration: none;
         }
 
+        .topbar {
+            text-align: center;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin: 0;
+            background-color: #262626;
+        }
+
+        .topbar a {
+            font-family: Inconsolata;
+            font-weight: 400;
+            width:100%;
+            font-size: 35px;
+            padding: 35px;
+            text-decoration: none;
+            color: white;
+        }
+        .box {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            border: 10px #363636 solid;
+            padding: 1%;
+            margin: auto;
+            width: 50%;
+            background-color: #363636;
+            color: white;
+        }
+
+        .contactholder {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            border: 10px #363636 solid;
+            padding: 1%;
+            margin: auto;
+            width: 65%;
+            background-color: #363636;
+            color: white;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .contactinfo{
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            border: 10px #363636 solid;
+            margin: auto;
+            width: 40%;
+            background-color: #363636;
+            color: white;
+        }
+
+        hr {
+            height: 2px;
+            background-color: white;
+            border-color: white;
+            border: none;
+        }
+
+        body {
+            background-color: #E6E6E6;
+        }
     </style>
 </head>
 
 <body style="padding : 0; margin:0;">
     <div class="topbar">
-        <p>L&L Insurance</p>
+        <a href = "index.html">L&L Insurance</a>
     </div>
-    <div class="navbar">
+    <div class = "navbar">
         <a href="gallery.html">Gallery</a>
         <a href="orderform.html">Order Form</a>
         <a href="services.html">Services</a>
     </div>
 
-    <div class="wrapper">
-        <img src = "images/wordbubbleheart.jfif" ></img>
-        <img src="images/insurancereasons.jpg"></img>
-        <img src="images/heartwfamily.png"></img>
-        <img src="images/insurancecompanies.jpg"></img>
-        <img src="images/insurancepays.png"></img>
-        <img src="images/family.jpg"></img>
-        <!-- <footer style = "height: auto;width:auto;background-color: aqua;">fiwegnreignergnjbj</footer> -->
+    <br>
+    <div class = "contactholder">
+        <p class = "contactheader">What We Do</p>
+        <hr>
+        <p>L&L insurance supplies you with affordable, high-quality insurance for your loved ones. In the case of their death, we will supply you with money in order to afford funeral services and more.</p>
+        <br>
+        <div style = "display: flex; align-content: space-between;">
+            <div class="contactinfo">
+                <p>Pricing</p>
+                <hr>
+                <p>Regular insurance:<br><br>
+                Male/Female Age 30-39: $350/mo<br><br>
+                Male/Female Age 40-49: $400/mo<br><br>
+                Male/Female Age 50-60+: $500/mo
+                </p>
+            </div>
+            <div class="contactinfo">
+                <p>Special Requests</p>
+                <hr>
+                <p>Special requests are rarely accepted as the person you are insuring has to have a chronic illness or suffering from a terminal disease. In the case either of these are acceptable, we are able to compensate you an extra sum of money which is usually around $10-15 thousand.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class = "contactholder">
+        <p class = "contactheader">Customer Testemonials</p>
+        <hr>
+        <br>
+        <div style = "display: flex; align-content: space-between;">
+            <div class="contactinfo" style = "width:30%;">
+                <p>Robert J.</p>
+                <hr>
+                <p>L&L insurance helped my family recover from my mother's death. We really appreciate their work and hope their company helps more that are in our situation.
+                </p>
+            </div>
+            <div class="contactinfo" style = "width:30%;">
+                <p>Bill U.</p>
+                <hr>
+                <p>I was surprised at the rates L&L insurance offered, and it payed off. When my brother died, my family got a large sum of money and barely had to pay anything for the burial services.</p>
+            </div>
+            <div class="contactinfo" style = "width:30%;">
+                <p>Victor D.</p>
+                <hr>
+                <p>I appreciate the help L&L insurance has given my family. In our time of need, they supplied us with the required money to bury our family member and pay off debts.</p>
+            </div>
+        </div>
+        <br>
     </div>
 </body>
 
